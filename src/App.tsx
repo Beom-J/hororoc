@@ -2,14 +2,14 @@ import React from "react";
 import "./App.css";
 import { BodyContainer } from "./components/body";
 import { Header } from "./components/header";
-import { MenuBar } from "./components/menubar";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <BodyContainer />
-      <MenuBar />
+      <Footer />
     </div>
   );
 }

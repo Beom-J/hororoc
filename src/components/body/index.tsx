@@ -1,11 +1,11 @@
 // @flow
 import * as React from "react";
-import { Container } from "./style";
+import * as S from "./style";
 type Props = {};
 export const BodyContainer = (props: Props) => {
   return (
-    <Container>
+    <S.Container>
       <span>body!</span>
-    </Container>
+    </S.Container>
   );
 };

@@ -1,11 +1,9 @@
-// @flow
-import * as React from "react";
-import { HeaderBar } from "./style";
+import * as S from "./style";
 type Props = {};
 export const Header = (props: Props) => {
   return (
-    <HeaderBar>
+    <S.Header>
       <span>header!</span>
-    </HeaderBar>
+    </S.Header>
   );
 };

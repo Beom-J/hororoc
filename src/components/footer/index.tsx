@@ -1,12 +1,12 @@
 // @flow
 import * as React from "react";
-import { Footer } from "./style";
+import * as S from "./style";
 
 type Props = {};
-export const MenuBar = (props: Props) => {
+export const Footer = (props: Props) => {
   return (
-    <Footer>
+    <S.Footer>
       <span>menu bar!</span>
-    </Footer>
+    </S.Footer>
   );
 };
