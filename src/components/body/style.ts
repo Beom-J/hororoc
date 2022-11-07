@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.div`
+export const Wraper = styled.div`
   background: green;
   height: 80vh;
 `;

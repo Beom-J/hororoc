@@ -3,10 +3,10 @@ import * as React from "react";
 import * as S from "./style";
 
 type Props = {};
-export const Footer = (props: Props) => {
+export const BottomNavigation = (props: Props) => {
   return (
-    <S.Footer>
+    <S.Wrapper>
       <span>menu bar!</span>
-    </S.Footer>
+    </S.Wrapper>
   );
 };

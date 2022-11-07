@@ -4,8 +4,8 @@ import * as S from "./style";
 type Props = {};
 export const BodyContainer = (props: Props) => {
   return (
-    <S.Container>
+    <S.Wraper>
       <span>body!</span>
-    </S.Container>
+    </S.Wraper>
   );
 };

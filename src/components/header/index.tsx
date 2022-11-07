@@ -2,8 +2,8 @@ import * as S from "./style";
 type Props = {};
 export const Header = (props: Props) => {
   return (
-    <S.Header>
+    <S.Wrapper>
       <span>header!</span>
-    </S.Header>
+    </S.Wrapper>
   );
 };

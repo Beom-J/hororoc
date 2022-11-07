@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const Header = styled.div`
+export const Wrapper = styled.div`
   position: sticky;
   background: yellow;
   height: 10vh;
