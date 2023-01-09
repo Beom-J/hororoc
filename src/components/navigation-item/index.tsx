@@ -1,17 +1,31 @@
-import React from "react";
-import { S } from "./style";
+import styled from "@emotion/styled";
+import React, { ReactNode } from "react";
 
 interface Props {
   label: string;
-  icon: string;
+  icon: ReactNode;
 }
 
-const NavigationItem = (props: Props) => {
+export const NavigationItem = (props: Props) => {
   return (
     <div>
-      <S.Wrapper>{props.label}</S.Wrapper>
+      <SC.Button>
+        {props.icon}
+        <br />
+        {props.label}
+      </SC.Button>
     </div>
   );
 };
 
-export default NavigationItem;
+const SC = {
+  Button: styled.button`
+    background: white;
+    border: 0;
+    font-size: 15px;
+
+    svg {
+      font-size: 20px;
+    }
+  `,
+};

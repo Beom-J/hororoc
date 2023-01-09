@@ -1,45 +1,50 @@
-// @flow
-import * as React from "react";
-import NavigationItem from "../navigation-item";
-import * as S from "./style";
+import { NavigationItem } from "../navigation-item";
+import {
+  BiHomeAlt,
+  BiBookmark,
+  BiCookie,
+  BiHash,
+  BiUser,
+} from "react-icons/bi";
+import styled from "@emotion/styled";
 
 const navigations = [
   {
     name: "홈",
     value: "home",
     path: "/",
-    icon: "",
+    icon: <BiHomeAlt />,
   },
   {
     name: "레시피",
     value: "recipe",
     path: "/",
-    icon: "",
+    icon: <BiCookie />,
   },
   {
     name: "발견",
     value: "discovery",
     path: "/",
-    icon: "",
+    icon: <BiHash />,
   },
   {
     name: "스크랩",
     value: "scrap",
     path: "/",
-    icon: "",
+    icon: <BiBookmark />,
   },
   {
     name: "내 정보",
     value: "me",
     path: "/",
-    icon: "",
+    icon: <BiUser />,
   },
 ];
 
 type Props = {};
 export const BottomNavigation = (props: Props) => {
   return (
-    <S.Wrapper>
+    <SC.Wrapper>
       {navigations.map((navigation) => (
         <NavigationItem
           key={navigation.value}
@@ -47,6 +52,17 @@ export const BottomNavigation = (props: Props) => {
           icon={navigation.icon}
         />
       ))}
-    </S.Wrapper>
+    </SC.Wrapper>
   );
+};
+
+const SC = {
+  Wrapper: styled.div`
+    background: white;
+    position: sticky;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  `,
 };

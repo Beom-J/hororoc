@@ -1,11 +1,16 @@
-// @flow
-import * as React from "react";
-import * as S from "./style";
+import styled from "@emotion/styled";
 type Props = {};
 export const BodyContainer = (props: Props) => {
   return (
-    <S.Wraper>
+    <SC.Wraper>
       <span>body!</span>
-    </S.Wraper>
+    </SC.Wraper>
   );
+};
+
+const SC = {
+  Wraper: styled.div`
+    background: green;
+    height: 84vh;
+  `,
 };
